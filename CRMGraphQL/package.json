@@ -1,0 +1,17 @@
+{
+  "name": "crmgraphql",
+  "version": "1.0.0",
+  "description": "curso GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Flavia Gregorio",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
