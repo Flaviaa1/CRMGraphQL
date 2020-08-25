@@ -12,8 +12,12 @@ type Tecnologia{
     tecnologia: String
 }
 
+input CursoInput {
+    tecnologia: String
+}
+
 type Query{
-    obtenerCursos:[Cursos]
+    obtenerCursos(input: CursoInput!):[Cursos]
     obtenerTecnologia:[Tecnologia]
 }
 `;
