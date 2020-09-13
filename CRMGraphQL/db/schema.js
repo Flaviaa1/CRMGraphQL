@@ -34,7 +34,14 @@ input UsuarioInput {
     password: String!
 }
 type Query {
+    #Usuarios
     obtenerUsuario(token: String!): Usuario
+
+    #Productos
+    obtenerProductos: [Producto]
+    obtenerProducto(id:ID!): Producto
+    
+
 }
 
 input AutenticarInput {
@@ -49,7 +56,8 @@ type Mutation {
     
     #Productos
     nuevoProducto (input: ProductoInput): Producto
-
+    actualizarProducto(id: ID!, input: ProductoInput): Producto
+    eliminarProducto(id:ID!): String
 } 
 `;
 
